@@ -1,0 +1,184 @@
+.stories-hero {
+  padding: 140px 10% 100px;
+
+  background: linear-gradient(135deg, #4f46e5, #6366f1);
+
+  color: white;
+}
+
+.stories-hero-content {
+  max-width: 750px;
+}
+
+.stories-hero h1 {
+  font-size: 4.5rem;
+
+  line-height: 1.1;
+
+  margin-bottom: 25px;
+}
+
+.stories-hero p {
+  font-size: 1.15rem;
+
+  line-height: 1.9;
+
+  opacity: 0.9;
+}
+
+/* Stories Grid */
+
+.stories-grid-section {
+  padding: 100px 10%;
+
+  background: #f8fafc;
+}
+
+.stories-grid {
+  display: grid;
+
+  grid-template-columns: repeat(3, 1fr);
+
+  gap: 35px;
+}
+
+.story-card {
+  background: white;
+
+  padding: 40px 30px;
+
+  border-radius: 24px;
+
+  text-align: center;
+
+  transition: 0.4s;
+
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+}
+
+.story-card:hover {
+  transform: translateY(-10px);
+}
+
+.story-card img {
+  width: 100px;
+  height: 100px;
+
+  object-fit: cover;
+
+  border-radius: 50%;
+
+  margin-bottom: 20px;
+}
+
+.story-card h3 {
+  font-size: 1.4rem;
+
+  color: #1e293b;
+
+  margin-bottom: 10px;
+}
+
+.story-card span {
+  color: #4f46e5;
+
+  font-weight: 600;
+
+  display: inline-block;
+
+  margin-bottom: 20px;
+}
+
+.story-card p {
+  color: #64748b;
+
+  line-height: 1.8;
+}
+
+/* CTA */
+
+.stories-cta {
+  padding: 100px 10%;
+
+  background: white;
+
+  text-align: center;
+}
+
+.stories-cta-content {
+  max-width: 700px;
+
+  margin: auto;
+}
+
+.stories-cta h2 {
+  font-size: 3rem;
+
+  color: #1e293b;
+
+  margin-bottom: 25px;
+}
+
+.stories-cta p {
+  color: #64748b;
+
+  line-height: 1.8;
+
+  margin-bottom: 35px;
+}
+
+.stories-cta button {
+  padding: 16px 40px;
+
+  border: none;
+
+  border-radius: 40px;
+
+  background: #4f46e5;
+
+  color: white;
+
+  font-size: 1rem;
+
+  font-weight: 600;
+
+  cursor: pointer;
+
+  transition: 0.3s;
+}
+
+.stories-cta button:hover {
+  background: #3730a3;
+
+  transform: translateY(-3px);
+}
+
+/* Responsive */
+
+@media (max-width: 992px) {
+  .stories-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .stories-hero h1 {
+    font-size: 3.5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .stories-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .stories-hero {
+    padding: 120px 8% 80px;
+  }
+
+  .stories-hero h1 {
+    font-size: 2.8rem;
+  }
+
+  .stories-cta h2 {
+    font-size: 2.2rem;
+  }
+}

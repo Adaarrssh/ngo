@@ -1,0 +1,63 @@
+.volunteer-section {
+  padding: 120px 10%;
+
+  background-image:
+    linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
+    url("https://images.unsplash.com/photo-1559027615-cd4628902d4a?q=80&w=1400&auto=format&fit=crop");
+
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+
+  text-align: center;
+
+  color: white;
+}
+
+.volunteer-overlay h2 {
+  font-size: 3rem;
+  margin-bottom: 25px;
+}
+
+.volunteer-overlay p {
+  max-width: 750px;
+  margin: auto;
+
+  font-size: 1.1rem;
+  line-height: 1.8;
+
+  margin-bottom: 35px;
+
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.volunteer-overlay button {
+  padding: 16px 36px;
+
+  border: none;
+  border-radius: 40px;
+
+  background-color: #4f46e5;
+  color: white;
+
+  font-size: 1rem;
+  font-weight: 600;
+
+  cursor: pointer;
+
+  transition: 0.3s ease;
+}
+
+.volunteer-overlay button:hover {
+  background-color: #3730a3;
+
+  transform: translateY(-4px);
+}
+
+/* Responsive */
+
+@media (max-width: 700px) {
+  .volunteer-overlay h2 {
+    font-size: 2.3rem;
+  }
+}

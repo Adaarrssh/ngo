@@ -1,0 +1,264 @@
+.volunteer-hero {
+  padding: 140px 10% 120px;
+
+  background: linear-gradient(135deg, #4f46e5, #6366f1);
+
+  color: white;
+}
+
+.volunteer-hero-content {
+  max-width: 750px;
+}
+
+.volunteer-hero h1 {
+  font-size: 4.5rem;
+
+  line-height: 1.1;
+
+  margin-bottom: 25px;
+}
+
+.volunteer-hero p {
+  font-size: 1.15rem;
+
+  line-height: 1.9;
+
+  opacity: 0.9;
+
+  margin-bottom: 40px;
+}
+
+.volunteer-hero button {
+  padding: 16px 38px;
+
+  border: none;
+
+  border-radius: 40px;
+
+  background: white;
+
+  color: #4f46e5;
+
+  font-size: 1rem;
+
+  font-weight: 700;
+
+  cursor: pointer;
+
+  transition: 0.3s;
+}
+
+.volunteer-hero button:hover {
+  transform: translateY(-3px);
+
+  background: #f8fafc;
+}
+
+/* Why Volunteer */
+
+.why-volunteer {
+  padding: 100px 10%;
+
+  background: #f8fafc;
+}
+
+.section-heading {
+  text-align: center;
+
+  max-width: 750px;
+
+  margin: auto auto 70px;
+}
+
+.section-heading h2 {
+  font-size: 3rem;
+
+  color: #1e293b;
+
+  margin-bottom: 20px;
+}
+
+.section-heading p {
+  color: #64748b;
+
+  line-height: 1.8;
+}
+
+.volunteer-cards {
+  display: grid;
+
+  grid-template-columns: repeat(3, 1fr);
+
+  gap: 35px;
+}
+
+.volunteer-card {
+  background: white;
+
+  padding: 50px 35px;
+
+  border-radius: 24px;
+
+  text-align: center;
+
+  transition: 0.4s;
+
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+}
+
+.volunteer-card:hover {
+  transform: translateY(-10px);
+}
+
+.volunteer-card svg {
+  font-size: 3rem;
+
+  color: #4f46e5;
+
+  margin-bottom: 25px;
+}
+
+.volunteer-card h3 {
+  font-size: 1.5rem;
+
+  color: #1e293b;
+
+  margin-bottom: 18px;
+}
+
+.volunteer-card p {
+  color: #64748b;
+
+  line-height: 1.8;
+}
+
+/* Form Section */
+
+.volunteer-form-section {
+  padding: 100px 10%;
+
+  background: white;
+}
+
+.form-container {
+  max-width: 800px;
+
+  margin: auto;
+
+  background: #f8fafc;
+
+  padding: 60px;
+
+  border-radius: 30px;
+
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+}
+
+.form-container h2 {
+  text-align: center;
+
+  font-size: 2.8rem;
+
+  color: #1e293b;
+
+  margin-bottom: 40px;
+}
+
+.form-container form {
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 25px;
+}
+
+.form-container input,
+.form-container textarea {
+  width: 100%;
+
+  padding: 18px 20px;
+
+  border: 1px solid #dbe4ee;
+
+  border-radius: 14px;
+
+  font-size: 1rem;
+
+  outline: none;
+
+  transition: 0.3s;
+}
+
+.form-container input:focus,
+.form-container textarea:focus {
+  border-color: #4f46e5;
+}
+
+.form-container button {
+  padding: 18px;
+
+  border: none;
+
+  border-radius: 40px;
+
+  background: #4f46e5;
+
+  color: white;
+
+  font-size: 1rem;
+
+  font-weight: 600;
+
+  cursor: pointer;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  gap: 12px;
+
+  transition: 0.3s;
+}
+
+.form-container button:hover {
+  background: #3730a3;
+
+  transform: translateY(-3px);
+}
+
+/* Responsive */
+
+@media (max-width: 992px) {
+  .volunteer-cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .volunteer-hero h1 {
+    font-size: 3.5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .volunteer-cards {
+    grid-template-columns: 1fr;
+  }
+
+  .volunteer-hero {
+    padding: 120px 8% 80px;
+  }
+
+  .volunteer-hero h1 {
+    font-size: 2.8rem;
+  }
+
+  .section-heading h2,
+  .form-container h2 {
+    font-size: 2.2rem;
+  }
+
+  .form-container {
+    padding: 40px 25px;
+  }
+}
